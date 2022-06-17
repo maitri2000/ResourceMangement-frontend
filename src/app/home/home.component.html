@@ -1,0 +1,79 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Project Management</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="page__content-data position-absolute ">
+    <div class="cont">
+        <div id="leftbox" >
+         
+         <table>
+           <tr>
+             <th> tittle </th>
+             <th>Starting date</th>
+             <th>Ending  date</th>
+             <th>skills used</th>
+             <th>No. of team members</th>
+             <th>Description</th>
+             <th>delete</th>
+             <th>edit</th>
+           </tr>
+         
+            <ng-container *ngFor="let sk of skilllist">
+              <ng-container *ngFor="let std of stdatelist">
+                <ng-container *ngFor="let ed of eddatelist">
+                  <ng-container *ngFor="let n of nlist">
+                    <ng-container *ngFor="let de of deslist">
+                      <tr *ngFor="let prj of prjlist;">
+            <td > {{prj.name}}</td>
+            <td >{{std.name}}</td>
+            <td >{{ed.name}}</td>
+            <td >{{sk.name}}</td>
+            <td >{{n.name}}</td>
+            <td >{{de.name}}</td>
+             <td ><button (click)="delproj(prj.name)">x</button></td>
+             <td><button (click)="editprj(prj.name,sk.name,std.name,ed.name,n.name,de.name)">/</button></td>
+            </tr>
+            </ng-container>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </ng-container> 
+         </table>
+        </div>
+        <div  id="rightbox" >
+          <h3>Add a Project</h3>
+          <span  class="span">
+          <p >Enter your project name</p>
+          <input type="text" name="prjname" [(ngModel)]="prjname" placeholder="Project name" required>
+        </span>
+          <span class="span">
+          <p >Starting date</p>
+          <input  type="date" name="stdate" [(ngModel)]="stdate" placeholder="Starting date" required>
+          </span>
+          <span class="span">
+          <p >Ending   date </p>
+          <input  type="date" name="eddate" [(ngModel)]="eddate" placeholder="Ending date" required>
+          </span>
+          <span class="span">
+          <p >skill used in project</p>
+          <input type="text" name="skills" [(ngModel)]="skills" >
+        </span>
+          <span class="span" >
+          <p >Number of teammates</p>
+          <input type="number" name="n"  [(ngModel)]="n" >
+          </span>
+          <span class="span">
+            <p>select your team members</p>
+            <select>
+              <option>members</option>
+            </select>
+          </span>
+          <span class="span">
+          <p >Discription about project</p>
+          <input type="text"  name="des" [(ngModel)]="des">
+        </span>
+          <button id="button" type="submit" (click)="addproject()">ADD</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

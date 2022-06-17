@@ -1,0 +1,17 @@
+
+    <div class="login-page">
+        <div class="form">
+          <div class="login">
+            <div class="login-header">
+              <h2 ><span class="loginHead">LOGIN</span></h2>
+              <h3><span class="sub">Please enter your credentials to login</span></h3>
+            </div>
+          </div>
+          <form class="login-form">
+            <input #inpname type="text" class="inpText" placeholder="Name "/>
+            <input #inpId type="text" class="inpText" placeholder="Employee ID "/>
+            <button  type="button" (click)="loginFunc(inpname.value,inpId.value)">login</button>
+           <!--Why does adding type button prevents auto refresh -->
+          </form>
+        </div>
+     

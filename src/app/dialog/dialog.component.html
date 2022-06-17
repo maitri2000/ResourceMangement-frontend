@@ -1,0 +1,27 @@
+
+<div class="outer" [formGroup]="projectForm">
+<h1 mat-dialog-title>ADD A PROJECT</h1>
+<div mat-dialog-content   >
+   
+    
+        <div class="example-container">
+            <mat-form-field appearance="outline">
+                <mat-label>Project Name</mat-label>
+              <input  matInput placeholder="Enter Project Name" formControlName="projectname">
+            </mat-form-field>
+        </div>
+        <div class="example-container">
+            <mat-form-field appearance="outline">
+                <mat-label>Project ID</mat-label>
+              <input type="number" matInput placeholder="Enter Project ID" formControlName="projectid">
+            </mat-form-field>
+        </div>
+       
+        <div mat-dialog-action [align]="'end'">
+            <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+            <button (click)="addFunc()" style="margin-left:8px; " mat-raised-button color="primary">{{btnText}}</button>
+
+        </div>
+   
+</div>
+</div>

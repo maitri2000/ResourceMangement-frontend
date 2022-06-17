@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.big-snackbar{
+   padding:35px !important;
+  
+    
+    background: rgb(172, 44, 44);
+    color: white;
+  
+.mat-button-wrapper {
+  background-color: white !important; // action text color
+  color:black;
+  font-size: 20px !important;
+  padding: 15px !important;
+}
+.mat-simple-snackbar {
+  display: flex; 
+  font-size: 28px !important; // 28px  is double, 42px for triple
+  min-height: 70px !important; // 70px for double, 90px for triple
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+}
+
+
+.big-snackbar-success{
+  padding:35px !important;
+ 
+   
+   background: green;
+   color: white;
+ 
+.mat-button-wrapper {
+ background-color: white !important; // action text color
+ color:black;
+ font-size: 20px !important;
+ padding: 15px !important;
+}
+.mat-simple-snackbar {
+ display: flex; 
+ font-size: 28px !important; // 28px  is double, 42px for triple
+ min-height: 70px !important; // 70px for double, 90px for triple
+ align-items: center !important;
+ justify-content: center !important;
+}
+
+}

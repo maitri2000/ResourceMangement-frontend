@@ -1,0 +1,79 @@
+
+
+
+  <div class="d-flex page__box p-3 mt-2"></div>
+  
+ 
+
+
+<div class="centered-content">
+    <div class="task-manager-container">
+       
+     <div class="sidebar">
+       <h1 class="heading">RESOURCES</h1>
+        
+       <div class="list-menu">
+         
+           <!--Each time u click on a resource the route changes --fetch empId from url and fetch the projects 
+          for that url from the backend. Difference between routerLink and navigate-->
+          
+            <a class="list-menu-item" *ngFor="let list of displayList" [routerLink]="['/view',list._id]">
+              <div class="totalList">
+               <div class="left">
+                 {{list.empId}}
+               </div>
+               <div class="right"> {{list.resourceName}}</div>
+              </div>
+                 
+            </a>
+        
+        
+       </div>
+       <div cds-layout="vertical gap:md">
+        <div cds-layout="horizontal gap:sm">
+            <button class="addBtn" routerLink="/newResource">+ ADD RESOURCE</button>
+           
+        </div>
+        </div>
+     </div>
+
+     <div class="task-list-container">
+       
+        <div class="topbar">
+          <h1 class="heading">PROJECTS AND SKILLS</h1>
+       
+        
+          <ul>
+            <button (click)="showSkills()" class="editbtn2" >SKILLS</button>
+            <li> 
+            
+              <button class="editbtn">EDIT RESOURCE</button>
+              <ul class="dropdown" >
+                <li><a class="anchor" (click)="deleteResource()">Delete Resource</a></li>
+                <li><a  class="anchor " >Update Resource</a></li>
+             
+              </ul>
+            </li>
+          
+          </ul>
+        
+        </div>
+      <div class="task" *ngFor="let project of projectList">
+            <div class="projId">{{project.pId}}</div>
+            <div class="tasktext">{{project.projectName}} </div>
+      </div>
+     
+      
+   <button  (click)="createProject()" class="circle-add"  ><img class="imgD" src="../../assets/plusblack.svg"/></button>
+
+    
+    </div>
+ 
+   
+ 
+
+
+
+    
+    </div>
+</div>

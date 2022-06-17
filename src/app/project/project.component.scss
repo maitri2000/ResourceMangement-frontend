@@ -1,0 +1,70 @@
+.page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+    &__box {
+      min-height: 120px;
+      background: #1e293b;
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+    &__content {
+      min-height: calc(100vh - 178px);
+      border-radius: 10px;
+      margin-top: -2rem;
+      background: white;
+      color: black;
+      font-size: 2rem;
+      &-data {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.addBtn{
+   position: absolute;
+   margin-right:30px;
+   font-size: 25px;
+   padding: 20px;
+   border: none;
+   border-radius: 30px;
+
+}
+.example-container {
+  
+
+    overflow-y: scroll;
+    background-color: aqua;
+  }
+  
+  table {
+    width: 900px;
+    height:800px;
+   
+  
+  }
+  .mat-table{
+    border: 5px solid #0095D3;
+  
+  }
+
+  .mat-header-cell{
+      font-weight: bolder;
+      padding: 20px;
+      font-size: 30px;
+  }
+  .mat-cell{
+    font-weight: bolder;
+   
+    font-size: 20px;
+  }
+  .mat-icon{
+    size: 20px;
+  }
+  

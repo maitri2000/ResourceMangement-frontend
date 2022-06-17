@@ -1,0 +1,296 @@
+
+
+.centered-content
+{
+    display: flex;
+    justify-content: center;
+  
+    align-items: center;
+    height: 800px;
+    width:2000px;
+    background: #0095D3;
+}
+
+.task-manager-container
+{
+       display: flex;
+       justify-content: center;
+      
+       width:2000px;
+       height:100%;
+       max-width: 2000px;
+       max-height: 680px;
+       background: white;
+
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    background-color: white;
+    padding-top: 35px;
+    padding-left: 15px;
+    
+}
+.task-list-container{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    background-color: gainsboro;
+    padding: 35px;
+    position: relative;
+
+}
+.heading
+{
+    font-weight: bolder;
+    color: #0095D3;
+    display: flex;
+    margin-top: 25px;
+    justify-content:center;
+    
+}
+
+.list-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    flex-grow: 1;
+    padding: 10px 10px ;
+    overflow: scroll;
+ 
+}
+.list-menu-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width:100%;
+    margin-bottom: 2px;
+  color:#5f5f5f;
+   cursor: pointer;
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: bolder;
+}
+.list-menu-item:hover{
+    background-color: #0095D3;
+    color: white
+}
+.task{
+   
+    background-color: white;
+    padding:5px 10px;
+    border-radius: 5px;
+    display: flex;
+      
+    align-items: center;
+    justify-content:flex-start;
+    margin-top:10px;
+    cursor: pointer;
+    
+}
+.tasktext{
+    color:#5f5f5f;
+    font-size: 25px;
+    margin-bottom:10px ;
+
+}
+
+.task:hover{
+    box-shadow: 0 0 0 5px #eeeeee ;
+}
+
+.addBtn{
+    height:50px;
+    width:200px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.totalList{
+    display: flex;
+    width:100%;
+   
+ 
+   
+}
+.left{
+ 
+    
+
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width:15%;
+}
+.right{
+    padding: 20px;
+    background-color: #5f5f5f;
+    color: white;
+    width:85%;
+} 
+
+.projId{
+     padding: 20px;
+     background: #5f5f5f;
+     color: #eeeeee;
+     margin-right: 100px;
+}
+
+.circle-add{
+    height: 70px;
+    width:70px;
+    background-color: gainsboro;
+    border:none;
+    position: absolute;
+    bottom:20px;
+    right:20px;
+   
+}
+
+.imgD{
+    background-color: gainsboro;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.topbar{
+    display: flex;
+  
+
+}
+.heading{
+   flex-grow: 1;
+
+}
+.menu{
+    background-color: #333;
+    padding: 10px;
+    color:rgb(192, 192, 192);
+    margin-top: 55px;
+   
+}
+.menu-item{
+    cursor: pointer;
+    padding:5px 0;
+}
+.menu-toggler{
+   height: 40px;
+   width: fit-content;
+    margin-top:20px;
+    margin-right: -30px;
+    margin-bottom: 30px;
+}
+.menu-item:hover{
+    text-decoration: underline;
+}
+
+
+a {
+    text-decoration: none;
+  }
+  
+  nav {
+    font-family: monospace;
+  }
+  
+  ul {
+   
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  li {
+    color: #fff;
+  
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+ 
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+   background-color:#0095D3;
+   color: #eeeeee;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+    
+
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+.anchor:hover
+{
+   color:black;
+   cursor: pointer;
+}
+
+.editbtn{
+    background-color: #0095D3;
+    color:white;
+    height: fit-content;
+   margin-top: 0px;
+   font-size: 20px;
+   border-radius: 50px;
+    position: relative;
+   
+  
+}
+.editbtn2
+{
+    background-color: #0095D3;
+    color:white;
+    height: fit-content;
+   margin-top: 25px;
+   font-size: 20px;
+   border-radius: 50px;
+
+}
+.addBtn{
+    height: fit-content;
+    width: 50%;
+    margin-top: 5px;
+    background-color: #0095D3;
+    color: #eeeeee;
+    border-radius: 50px;
+
+    
+}
+
+

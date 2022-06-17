@@ -1,0 +1,23 @@
+
+
+<div class="centered-content">
+    <div class="modal-box">
+       
+    
+    <h1 class="text"> ADD  A RESOURCE</h1>
+    <label><span  class="labelstyle">Resource Name </span> </label>
+                <input #inp1 />
+                <label><span  class="labelstyle">Resource ID</span> </label>
+                <input  #inp2 />
+              
+    
+                <div class="btnContainer">
+                    <button  (click)="createResource(inp1.value,+(inp2.value))" class="btn-add" >ADD RESOURCE</button>
+                    <button class="btn" routerLink="/view" >CANCEL</button>
+                </div>
+     
+    
+    
+    </div>
+    </div>
+    

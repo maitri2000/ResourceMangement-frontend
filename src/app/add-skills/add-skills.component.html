@@ -1,0 +1,34 @@
+<html>
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Skill Management</div>
+    <div class="page__content shadow p-3 position-relative">
+      <div class="page__content-data position-absolute text-center">
+         
+            <body ng-controller="addSkillsController" *ngIf="selectedId">
+                <div class="container">
+                <h1   *ngIf="yours==true+''" class ="writing">ADD YOUR SKILLS HERE</h1>
+                <ul>
+                 
+                  <h4 class="writing">NUMBER OF SKILLS ACQUIRED: {{c}} </h4> 
+                
+                  <h4 class="writing">CURRENT SKILLS</h4>
+                  <li  *ngFor="let skill of skilllist2 ">
+                    {{skill.name}}
+                    <button *ngIf="yours==true+''" (click)="deleteSkill(skill.name)"  >x</button>
+                  </li>
+                </ul>
+               <form name="skillsFrm"  *ngIf="yours==true+''" >
+                  <input type="text" id="input" name="newSkill"   [(ngModel)]="newSkill" required />
+                  <button  ng-disabled="skillsFrm.$invalid" type="submit"  (click)="addSkill()" class="addBtn">Add</button>
+                  <button   (click)="finalSubmission()" class="addBtn">Done</button>
+                </form>
+              
+            </div>
+             </body>
+             <h1 *ngIf="!selectedId" class="sorry">PLEASE SELECT A RESOURE FROM RESOURCE MANAGEMENT</h1>
+        
+      
+      </div>
+    </div>
+  </div>
+</html>

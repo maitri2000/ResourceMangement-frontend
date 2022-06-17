@@ -1,0 +1,126 @@
+
+.page {
+    color: rgb(254, 253, 253);
+    padding: 0 1rem;
+    background: #f1f5f9;
+    &__box {
+      min-height: 120px;
+      background: #1e293b;
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+    &__content {
+      min-height: calc(100vh - 178px);
+      border-radius: 10px;
+      margin-top: -2rem;
+      background: white;
+      color: black;
+      font-size: 2rem;
+      &-data {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+
+  * {
+    font-size: 14px;
+    font-family: "Titillium Web", sans-serif;
+    
+  }
+  #count{
+    border: #182a9d dotted 1px;
+    border-radius: 7px;
+    padding:15px 0px 0px 0px;
+  }
+  h1 {
+    font-size: 32px;
+    color: black;
+  }
+  #input{
+    color: #02070b;
+  }
+  input {
+    border: 0;
+    margin-right: 5px;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 80px;
+    padding: 8px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  input:focus, input:active {
+    outline: 0;
+    width: 200px;
+    border-bottom-color: #F97D75;
+  }
+  
+  button {
+    background-color: #F97D75;
+    border: 0;
+    padding: 8px 20px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  button:focus, button:active {
+    outline: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 25px;
+  }
+  
+  li {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    border-radius: 3px;
+  }
+  
+  .fa-close {
+    cursor: pointer;
+  }
+  
+  [contenteditable]:focus, [contenteditable]:active {
+    outline: 0;
+  }
+  .container{
+     
+      border: 2px solid #1e293b;
+      width: 1000px;
+      height:fit-content;
+     padding: 20px;
+    background-color: #0095D3;;
+  }
+  .writing{
+      color:white;
+      font-weight: bolder;
+      padding: 10px;
+      letter-spacing: 4px;
+      font-size: 25px;
+  }
+  .addBtn{
+      margin-left: 10px;
+      width: 150px;
+      padding: 10px;
+      border-radius: 30px;
+     font-weight: bolder;
+     font-size: 20px;
+  }
+  .sorry{
+      color: gray;
+      font-weight: bolder;
+     letter-spacing: 2px;
+      width: fit-content;
+  }
